@@ -1,0 +1,64 @@
+:root {
+  --classic-op: linear-gradient(to bottom, #ff9500, #cc7a00);
+  --other-op: #696969;
+  --number: #171b1b;
+  --complex-op: #282a2a;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 390px;
+  height: 844px;
+  padding: 1em;
+}
+
+.App h1,
+.App h2 {
+  text-align: right;
+  letter-spacing: 3px;
+}
+
+.App h2 {
+  color: #a6acaf;
+  margin-bottom: 0;
+}
+
+.App h1 {
+  font-size: 4em;
+  margin-top: 0;
+}
+
+.OpSimpleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.OpSimpleLine {
+  display: flex;
+  gap: 10px;
+}
+
+.ButtonOpSimple {
+  width: 90px;
+  height: 90px;
+  border-radius: 45%;
+  border: none;
+  background: var(--number);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-size: 2em;
+  font-weight: 800;
+}
+.ButtonOpSimple:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
